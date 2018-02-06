@@ -23,5 +23,7 @@ bindkey "^N" history-beginning-search-forward-end
 alias diff="coloddiff"
 alias ls='ls -G'
 alias ll='ls -hl'
+alias rm='rm -i'
+alias mv='mv -i'
 alias chrome='open -a "Google Chrome"'
 alias slack='open /Applications/Slack.app'
