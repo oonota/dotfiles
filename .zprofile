@@ -1,1 +1,1 @@
-/Users/oono/.zprofile
+../.zprofile

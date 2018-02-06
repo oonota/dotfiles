@@ -1,1 +1,1 @@
-/Users/oono/.zshrc
+../.zshrc

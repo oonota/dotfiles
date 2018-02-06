@@ -1,1 +1,1 @@
-/Users/oono/.vimrc
+../.vimrc

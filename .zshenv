@@ -1,1 +1,1 @@
-/Users/oono/.zshenv
+../.zshenv
