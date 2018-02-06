@@ -1,0 +1,1 @@
+/Users/oono/.zshenv
