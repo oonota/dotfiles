@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOTFILES=(.vimrc .zshrc .zshenv .zprofile)
+DOTFILES=(.vimrc .zshrc .zshenv)
 
 for file in ${DOTFILES[@]}
 do
