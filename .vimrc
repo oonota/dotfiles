@@ -18,6 +18,15 @@ set shiftwidth=2
 "vim-nerdtree-tabs
 let g:nerdtree_tabs_open_on_console_startup=1
 
+"sonictemplate-vim
+"set template directory
+let g:sonictemplate_vim_template_dir = [
+      \ '~/.vim/template'
+      \]
+"lightline.vim
+let g:lightline = {
+      \ 'colorscheme': 'wombat'
+      \ }
 
 
 "全角スペースをハイライト表示
@@ -90,6 +99,9 @@ NeoBundle 'kana/vim-fakeclip'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'Yggdroot/indentLine'
+NeoBundle 'mattn/sonictemplate-vim'
+NeoBundle 'cohama/lexima.vim'
+NeoBundle 'itchyny/lightline.vim'
 au BufNewFile,BufRead *.pde setf processing
  
 call neobundle#end()
