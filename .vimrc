@@ -4,7 +4,6 @@ syntax enable
 set background=dark
 let g:hybrid_use_iTerm_colors = 1
 set t_Co=256
-colorscheme hybrid
 syntax on
 set cursorline
 "set mouse=a
@@ -89,14 +88,9 @@ call neobundle#begin(expand('~/.vim/bundle/'))
  
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-NeoBundle "sudar/vim-arduino-syntax"
-NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'Shougo/neocomplcache' 
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'jistr/vim-nerdtree-tabs'
-NeoBundle "sophacles/vim-processing"
-NeoBundle 'kana/vim-fakeclip'
-NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'Yggdroot/indentLine'
 NeoBundle 'mattn/sonictemplate-vim'
@@ -107,3 +101,4 @@ au BufNewFile,BufRead *.pde setf processing
 call neobundle#end()
 filetype plugin indent on
 NeoBundleCheck
+colorscheme hybrid
