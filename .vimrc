@@ -14,6 +14,9 @@ set fileencodings=utf-8,sjis,iso-2022-jp
 set tabstop=2
 set shiftwidth=2
 
+"for clipboard
+set clipboard+=unnamed
+
 "vim-nerdtree-tabs
 let g:nerdtree_tabs_open_on_console_startup=1
 
