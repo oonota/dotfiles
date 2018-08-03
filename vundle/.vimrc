@@ -33,15 +33,10 @@ let g:lightline = {
       \ 'colorscheme': 'wombat'
       \ }
 
-"vim-devions
-set guifont=Cica:h16
-set printfont=Cica:h12
-"set ambiwidth=double
-set ambiwidth=single
-" フォルダアイコンの表示をON
-let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 
-
+"複数行コメントアウト  ctrl-kで実行
+nmap <C-K> <Plug>(caw:hatpos:toggle)
+vmap <C-K> <Plug>(caw:hatpos:toggle)
 
 
 "全角スペースをハイライト表示
@@ -114,7 +109,7 @@ Plugin 'Yggdroot/indentLine'     "インデント可視化
 Plugin 'mattn/sonictemplate-vim' "補完
 Plugin 'cohama/lexima.vim'       "自動で括弧閉じる
 Plugin 'itchyny/lightline.vim'
-Plugin 'ryanoasis/vim-devicons'
+Plugin 'tyru/caw.vim.git'        "複数行コメントアウト
 
 call vundle#end()
 filetype plugin indent on
