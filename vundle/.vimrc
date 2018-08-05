@@ -1,6 +1,3 @@
-"
-" Vundle practice
-"
 set number
 set title
 syntax enable
@@ -110,6 +107,7 @@ Plugin 'mattn/sonictemplate-vim' "補完
 Plugin 'cohama/lexima.vim'       "自動で括弧閉じる
 Plugin 'itchyny/lightline.vim'
 Plugin 'tyru/caw.vim.git'        "複数行コメントアウト
+Plugin 'Markdown'                "markdown syntax
 
 call vundle#end()
 filetype plugin indent on
