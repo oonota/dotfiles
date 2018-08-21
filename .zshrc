@@ -72,5 +72,16 @@ alias rm='rm -i'
 alias mv='mv -i'
 alias pd='popd'
 alias latexmk='latexmk -pvc'
-#alias ctags=''
-alias ctags="`brew --prefix`/bin/ctags"
+
+
+
+
+case ${OSTYPE} in
+  darwin*)
+    # ここに Mac 向けの設定
+    ;;
+  linux*)
+    # ここに Linux 向けの設定
+		alias ls='ls --color'
+    ;;
+esac
