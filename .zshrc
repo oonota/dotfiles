@@ -52,6 +52,10 @@ setopt hist_save_no_dups    # 履歴と重複するコマンドを記録しな�
 
 setopt nonomatch            #アスタリスクなどを使えるように
 
+# neovim
+export XDG_CONFIG_HOME=~/.config
+
+
 
 # コマンド履歴検索
 autoload history-search-end
@@ -67,4 +71,6 @@ alias ll='ls -hl'
 alias rm='rm -i'
 alias mv='mv -i'
 alias pd='popd'
-alias latexmk='latexmk -pv'
+alias latexmk='latexmk -pvc'
+#alias ctags=''
+alias ctags="`brew --prefix`/bin/ctags"
