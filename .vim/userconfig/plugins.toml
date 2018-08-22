@@ -1,0 +1,52 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+#nerdtree
+repo = 'scrooloose/nerdtree'
+
+[[plugins]]
+#nerdtree-tab
+repo = 'jistr/vim-nerdtree-tabs'
+hook_add = 'let g:nerdtree_tabs_open_on_console_startup=1'
+
+[[plugins]]
+#インデント可視化
+repo = 'Yggdroot/indentLine'
+
+#[[plugins]]
+##status bar
+#repo = 'itchyny/lightline.vim'
+#hook_add = '''
+#let g:lightline = {
+#      \ 'colorscheme': 'wombat'
+#      \ }
+#'''
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+hook_add = '''
+let g:airline_powerline_fonts = 1
+set laststatus=2
+let g:airline_theme = 'simple theme'
+'''
+
+
+[[plugins]]
+#複数行コメントアウト
+  repo = 'tyru/caw.vim.git'
+  hook_add = '''
+  nmap <C-K> <Plug>(caw:hatpos:toggle)
+  vmap <C-K> <Plug>(caw:hatpos:toggle)
+  '''
+
+[[plugins]]
+
+	repo = 'mattn/sonictemplate-vim'
+	#set template directory
+	hook_add = '''
+      let g:sonictemplate_vim_template_dir = [
+      \ '~/.vim/template'
+      \]
+  '''
+
+

@@ -17,18 +17,8 @@ set shiftwidth=2
 "for clipboard
 set clipboard+=unnamed
 
-"vim-nerdtree-tabs
-let g:nerdtree_tabs_open_on_console_startup=1
 
-"sonictemplate-vim
-"set template directory
-let g:sonictemplate_vim_template_dir = [
-      \ '~/.vim/template'
-      \]
-"lightline.vim
-let g:lightline = {
-      \ 'colorscheme': 'wombat'
-      \ }
+
 
 
 "全角スペースをハイライト表示
@@ -46,63 +36,56 @@ if has('syntax')
 endif
 
 
-"" neocomplchache
-"Start
-" Disable AutoComplPop.
-let g:acp_enableAtStartup = 0
-" Use neocomplcache.
-let g:neocomplcache_enable_at_startup = 1
-" Use smartcase.
-let g:neocomplcache_enable_smart_case = 1
-" Set minimum syntax keyword length.
-let g:neocomplcache_min_syntax_length = 3
-let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
 
-" Define dictionary.
-let g:neocomplcache_dictionary_filetype_lists = {
-    \ 'default' : ''
-    \ }
 
-if has('win32unix')
-  vnoremap "*y :'<,'>w !cat > /dev/clipboard
+
+
+"dein
+"Scripts-----------------------------------------------------------------------------------
+if &compatible
+  set nocompatible               " Be iMproved
+endif
+
+let s:dein_path = expand('~/.vim/dein')
+let s:dein_repo_path = s:dein_path . '/repos/github.com/Shougo/dein.vim'
+
+" dein.vim がなければ github からclone
+if &runtimepath !~# '/dein.vim'
+  if !isdirectory(s:dein_repo_path)
+    execute '!git clone https://github.com/Shougo/dein.vim' s:dein_repo_path
+  endif
+  execute 'set runtimepath^=' . fnamemodify(s:dein_repo_path, ':p')
+endif
+
+if dein#load_state(s:dein_path)
+  call dein#begin(s:dein_path)
+
+  let g:config_dir  = expand('~/.vim/dein/userconfig')
+  let s:toml        = g:config_dir . '/plugins.toml'
+  let s:lazytoml   = g:config_dir . '/pluginslazy.toml'
+
+  " TOML 読み込み
+  call dein#load_toml(s:toml,      {'lazy': 0})
+  call dein#load_toml(s:lazytoml, {'lazy': 1})
+
+  call dein#end()
+  call dein#save_state()
 endif
 
 
-" Plugin key-mappings.
-inoremap <expr><C-g>     neocomplcache#undo_completion()
-inoremap <expr><C-l>     neocomplcache#complete_common_string()
-
-" Recommended key-mappings.
-" <CR>: close popup and save indent.
-inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
-function! s:my_cr_function()
-  return neocomplcache#smart_close_popup() . "\<CR>"
-endfunction
-" <TAB>: completion.
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-" <C-h>, <BS>: close popup and delete backword char.
-inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
-inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
-inoremap <expr><C-y>  neocomplcache#close_popup()
-inoremap <expr><C-e>  neocomplcache#cancel_popup()
-"End
-
-set runtimepath+=~/.vim/bundle/neobundle.vim/
-call neobundle#begin(expand('~/.vim/bundle/'))
- 
-NeoBundleFetch 'Shougo/neobundle.vim'
-
-NeoBundle 'Shougo/neocomplcache' 
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'jistr/vim-nerdtree-tabs'
-NeoBundle 'w0ng/vim-hybrid'
-NeoBundle 'Yggdroot/indentLine'
-NeoBundle 'mattn/sonictemplate-vim'
-NeoBundle 'cohama/lexima.vim'
-NeoBundle 'itchyny/lightline.vim'
-au BufNewFile,BufRead *.pde setf processing
- 
-call neobundle#end()
+" Required:
 filetype plugin indent on
-NeoBundleCheck
+syntax enable
+
+" インストールされていないプラグインがあればインストールする
+" If you want to install not installed plugins on startup.
+if dein#check_install()
+  call dein#install()
+endif
+"End dein
+"Scripts---------------------------------------------------------------
+
+
+
+"色
 colorscheme hybrid
