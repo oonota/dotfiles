@@ -24,5 +24,5 @@ on_i = 1
 
 [[plugins]]
 #pep8インデント
-repo = Vimjas/vim-python-pep8-indent'
+repo = 'Vimjas/vim-python-pep8-indent'
 on_i = 1
