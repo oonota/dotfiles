@@ -20,6 +20,10 @@ zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "ascii-soup/zsh-url-highlighter"
 zplug "b4b4r07/enhancd", use:init.sh
 
+
+#enhancdの後にls
+ENHANCD_HOOK_AFTER_CD=ls
+
 # hokan
 zplug "zsh-users/zsh-completions"
 
