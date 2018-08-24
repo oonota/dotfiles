@@ -18,6 +18,7 @@ zplug "chrissicool/zsh-256color"
 zplug "Tarrasch/zsh-colors"
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "ascii-soup/zsh-url-highlighter"
+zplug "b4b4r07/enhancd", use:init.sh
 
 # hokan
 zplug "zsh-users/zsh-completions"
