@@ -14,22 +14,16 @@ hook_add = 'let g:nerdtree_tabs_open_on_console_startup=1'
 #インデント可視化
 repo = 'Yggdroot/indentLine'
 
-#[[plugins]]
-##status bar
-#repo = 'itchyny/lightline.vim'
-#hook_add = '''
-#let g:lightline = {
-#      \ 'colorscheme': 'wombat'
-#      \ }
-#'''
 [[plugins]]
 repo = 'vim-airline/vim-airline'
 hook_add = '''
 let g:airline_powerline_fonts = 1
 set laststatus=2
-let g:airline_theme = 'simple theme'
+let g:airline_theme = 'jellybeans'
 '''
 
+[[plugins]]
+ repo = 'vim-airline/vim-airline-themes'
 
 [[plugins]]
 #複数行コメントアウト
@@ -40,7 +34,7 @@ let g:airline_theme = 'simple theme'
   '''
 
 [[plugins]]
-
+#template
 	repo = 'mattn/sonictemplate-vim'
 	#set template directory
 	hook_add = '''
@@ -49,4 +43,6 @@ let g:airline_theme = 'simple theme'
       \]
   '''
 
+[[plugins]]
+	repo = 'Shougo/unite.vim'
 
