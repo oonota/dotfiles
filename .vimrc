@@ -17,28 +17,11 @@ set shiftwidth=2
 "for clipboard
 set clipboard+=unnamed
 
+"tex 勝手に変換されるのを直す
+let g:tex_conceal = ''
 
 
-
-
-"全角スペースをハイライト表示
-function! ZenkakuSpace()
-    highlight ZenkakuSpace cterm=reverse ctermfg=DarkMagenta gui=reverse guifg=DarkMagenta
-	endfunction
-   
-if has('syntax')
-    augroup ZenkakuSpace
-        autocmd!
-        autocmd ColorScheme       * call ZenkakuSpace()
-        autocmd VimEnter,WinEnter * match ZenkakuSpace /　/
-    augroup END
-    call ZenkakuSpace()
-endif
-
-
-
-
-
+let g:python3_host_prog = $PYENV_ROOT . '/shims/python3'
 
 "dein
 "Scripts-----------------------------------------------------------------------------------
@@ -84,7 +67,6 @@ if dein#check_install()
 endif
 "End dein
 "Scripts---------------------------------------------------------------
-
 
 
 "色
