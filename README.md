@@ -24,6 +24,13 @@ This is directory for my setting.
 
 	- ad bloackk 
 
+# zsh-syntax-highliting
+pathの下線をやめる
+'''
+% vi ~/.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh
 
+#: ${ZSH_HIGHLIGHT_STYLES[path]:=underline}
+: ${ZSH_HIGHLIGHT_STYLES[path]:=none}
+'''
 
 
