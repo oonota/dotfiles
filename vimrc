@@ -14,6 +14,10 @@ set fileencodings=utf-8,sjis,iso-2022-jp
 set tabstop=2
 set shiftwidth=2
 
+"for search
+set incsearch "インクリメンタルサーチ．一文字入力ごとに検索を行う．
+
+
 "for clipboard
 set clipboard+=unnamed
 
