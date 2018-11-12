@@ -30,7 +30,6 @@ pathの下線をやめる
 % vi ~/.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh
 
 #: ${ZSH_HIGHLIGHT_STYLES[path]:=underline}
-: ${ZSH_HIGHLIGHT_STYLES[path]:=none}
-'''
-
-
+```
+vi ~/.zplug/repos/zsh-users/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh
+```
