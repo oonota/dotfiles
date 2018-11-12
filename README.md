@@ -26,10 +26,8 @@ This is directory for my setting.
 
 # zsh-syntax-highliting
 pathの下線をやめる
-'''
-% vi ~/.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh
 
-#: ${ZSH_HIGHLIGHT_STYLES[path]:=underline}
 ```
 vi ~/.zplug/repos/zsh-users/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh
 ```
+#: ${ZSH_HIGHLIGHT_STYLES[path]:=underline}
