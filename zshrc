@@ -93,6 +93,7 @@ alias ll='ls -hl'
 alias rm='rm -i'
 alias mv='mv -i'
 alias pd='popd'
+alias gs='git status'
 alias latexmk='latexmk -pvc'
 
 
