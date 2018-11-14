@@ -79,6 +79,9 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
 
+#terminal color
+export TERM="xterm-256color"
+
 # コマンド履歴検索
 autoload history-search-end
 zle -N history-beginning-search-backward-end history-search-end
