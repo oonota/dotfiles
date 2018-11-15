@@ -29,8 +29,8 @@ let g:airline_theme = 'jellybeans'
 #複数行コメントアウト
   repo = 'tyru/caw.vim.git'
   hook_add = '''
-  nmap <C-M> <Plug>(caw:hatpos:toggle)
-  vmap <C-M> <Plug>(caw:hatpos:toggle)
+  nmap <C-K> <Plug>(caw:hatpos:toggle)
+  vmap <C-K> <Plug>(caw:hatpos:toggle)
   '''
 
 [[plugins]]
@@ -43,6 +43,4 @@ let g:airline_theme = 'jellybeans'
       \]
   '''
 
-[[plugins]]
-	repo = 'Shougo/unite.vim'
 
