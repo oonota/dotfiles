@@ -1,5 +1,6 @@
 #!/usr/bin/perl
-$latex	= 'platex -halt-on-error %O %S';
+#$latex	= 'platex -halt-on-error %O %S';
+$latex	= 'uplatex -halt-on-error %O %S'; #学校の論文用
 $bibtex	= 'pbibtex %O %B';
 $dvipdf = 'dvipdfmx %O %S';
 $pdf_mode = 3; #use dvipdf
