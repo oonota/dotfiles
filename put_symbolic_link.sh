@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 DOTFILES=(zshrc zshenv zpreztorc tmux.conf vimrc latexmkrc)  
 DOTFILES_DIR=$(pwd)
