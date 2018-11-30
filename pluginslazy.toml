@@ -16,10 +16,9 @@
  hook_add = 
 '''
 autocmd FileType python setlocal completeopt-=preview "docstringは表示しない
-let g:deoplete#sources#jedi#server_timeout=100
-let g:deoplete#sources#jedi#statement_length=100
-" jedi本体の補完は切る（deoplete-jediで非同期処理をしてくれるため）
-let g:jedi#completions_enabled = 0
+"let g:deoplete#sources#jedi#statement_length=100
+"" jedi本体の補完は切る（deoplete-jediで非同期処理をしてくれるため）
+"let g:jedi#completions_enabled = 0
 '''
  depends = ['deoplete.nvim']
 
