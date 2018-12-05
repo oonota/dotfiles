@@ -9,3 +9,6 @@ sh ./installer.sh ${HOME}/.vim/dein
 rm -f ./install.sh
 
 
+# ln -sfv ${HOME}/.vim/
+
+
