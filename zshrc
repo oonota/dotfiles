@@ -87,7 +87,6 @@ alias pd='popd'
 alias gs='git status'
 alias latexmk='latexmk -pvc'
 
-alias tmux='tmux -u' # for alacritty ???
 
 
 
