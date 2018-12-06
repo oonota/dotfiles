@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOTFILES=(zshrc zshenv zpreztorc tmux.conf vimrc latexmkrc)  
+DOTFILES=(zshrc zshenv zpreztorc tmux.conf vimrc latexmkrc alacritty.yml)  
 DOTFILES_DIR=$(pwd)
 
 for file in ${DOTFILES[@]}

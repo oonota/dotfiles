@@ -39,18 +39,6 @@ zplug load
 autoload -U compinit
 compinit
 
-## prompt
-#RPROMPT="%{${fg[blue]}%}[%~]%{${reset_color}%}"
-#autoload -Uz vcs_info
-#setopt prompt_subst
-#zstyle ':vcs_info:git:*' check-for-changes true
-#zstyle ':vcs_info:git:*' stagedstr "%F{yellow}!"
-#zstyle ':vcs_info:git:*' unstagedstr "%F{red}+"
-#zstyle ':vcs_info:*' formats "%F{green}%c%u[%b]%f"
-#zstyle ':vcs_info:*' actionformats '[%b|%a]'
-#precmd () { vcs_info }
-#RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
-##PROMPT='%m:%c %n$ '
 
 # コマンド履歴
 HISTFILE=~/.zsh_history
@@ -99,6 +87,7 @@ alias pd='popd'
 alias gs='git status'
 alias latexmk='latexmk -pvc'
 
+alias tmux='tmux -u' # for alacritty ???
 
 
 
@@ -126,13 +115,14 @@ function tmux_automatically_attach_session()
     if is_screen_or_tmux_running; then
         ! is_exists 'tmux' && return 1
 
-        if is_tmux_runnning; then
-            echo "${fg_bold[red]} _____ __  __ _   ___  __ ${reset_color}"
-            echo "${fg_bold[red]}|_   _|  \/  | | | \ \/ / ${reset_color}"
-            echo "${fg_bold[red]}  | | | |\/| | | | |\  /  ${reset_color}"
-            echo "${fg_bold[red]}  | | | |  | | |_| |/  \  ${reset_color}"
-            echo "${fg_bold[red]}  |_| |_|  |_|\___//_/\_\ ${reset_color}"
-        elif is_screen_running; then
+        # if is_tmux_runnning; then
+        #     echo "${fg_bold[red]} _____ __  __ _   ___  __ ${reset_color}"
+        #     echo "${fg_bold[red]}|_   _|  \/  | | | \ \/ / ${reset_color}"
+        #     echo "${fg_bold[red]}  | | | |\/| | | | |\  /  ${reset_color}"
+        #     echo "${fg_bold[red]}  | | | |  | | |_| |/  \  ${reset_color}"
+        #     echo "${fg_bold[red]}  |_| |_|  |_|\___//_/\_\ ${reset_color}"
+        # elif is_screen_running; then
+        if is_screen_running; then
             echo "This is on screen."
         fi
     else
