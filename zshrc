@@ -66,6 +66,9 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
+# Japanese
+export LANG=ja_JP.UTF-8
+
 
 #terminal color
 export TERM="xterm-256color"
@@ -86,6 +89,7 @@ alias mv='mv -i'
 alias pd='popd'
 alias gs='git status'
 alias latexmk='latexmk -pvc'
+alias diff='colordiff'
 
 
 
@@ -163,6 +167,4 @@ function tmux_automatically_attach_session()
     fi
 }
 tmux_automatically_attach_session
-
-
 
