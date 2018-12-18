@@ -90,6 +90,7 @@ alias pd='popd'
 alias gs='git status'
 alias latexmk='latexmk -pvc'
 alias diff='colordiff'
+alias jn='jupyter notebook'
 
 
 
