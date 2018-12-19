@@ -1,4 +1,6 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
+#include <stdio.h>
+#include <cmath>
 
 #define print(x) std::cout << x << std::endl
 
