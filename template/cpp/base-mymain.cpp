@@ -1,8 +1,9 @@
-#include <bits/stdc++.h>
 #include <stdio.h>
 #include <cmath>
+#include <string>
+#include <vector>
+#include <algorithm>
 
-#define print(x) std::cout << x << std::endl
 
 using namespace std;
 
