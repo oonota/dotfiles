@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <cmath>
-#include <string>
-#include <vector>
-#include <algorithm>
+#include <bits/stdc++.h>
 
 
 
