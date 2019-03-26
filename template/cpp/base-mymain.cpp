@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <cmath>
 #include <bits/stdc++.h>
 
 
