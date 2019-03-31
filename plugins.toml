@@ -42,5 +42,9 @@ let g:airline_theme = 'jellybeans'
       \ '~/.vim/template'
       \]
   '''
+[[plugins]]
+#自動括弧
+repo = 'cohama/lexima.vim'
+on_i = 1
 
 
