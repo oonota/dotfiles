@@ -47,4 +47,6 @@ let g:airline_theme = 'jellybeans'
 repo = 'cohama/lexima.vim'
 on_i = 1
 
+[[plugins]]
+repo = 'tpope/vim-surround' 
 
