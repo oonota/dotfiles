@@ -1,0 +1,44 @@
+{
+	"snippets" : [
+	{
+		"name" : "example",
+		"code" : [
+			"# This is an example snippet!",
+		"# To create your own, add a new snippet block to the",
+		"# snippets.json file in your jupyter nbextensions directory:",
+		"# /nbextensions/snippets/snippets.json",
+		"import this"
+			]
+	},
+	{
+		"name" : "usually",
+		"code" : [
+			"import numpy as np",
+		"import pandas as pd",
+		"import matplotlib.pyplot as plt",
+		"%matplotlib inline",
+		"import sys"
+			]
+	},
+	{
+		"name" : "slack post",
+		"code" : [
+			"import os",
+			"import slackweb",
+			"slack = slackweb.Slack(url=os.environ['SLACK_HOOK_URL'])",
+			"slack.notify(text=\"\")"
+			]
+	},
+	{
+		"name" : "pytorch",
+		"code" : [
+			"import torch",
+			"import torch.utils.data",
+			"import torch.nn as nn",
+			"import torch.nn.functional as F",
+			"import torch.optim as optim",
+			"from tensorboardX import SummaryWriter"
+			]
+	}
+	]
+}
