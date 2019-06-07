@@ -98,6 +98,7 @@ alias jn='jupyter notebook'
 
 case ${OSTYPE} in
   darwin*)
+		export PATH=$PATH:/Users/ohno/.local/bin
     # ここに Mac 向けの設定
     ;;
   linux*)
