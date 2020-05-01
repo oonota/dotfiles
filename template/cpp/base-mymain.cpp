@@ -10,6 +10,9 @@ using ll = long long;
 #define FOR(i,a,b) for(int i=(a);i<(b);++i)
 #define REP(i,n)  FOR(i,0,n)
 
+//print
+#define pv(val) cerr << #val << '=' << (val) << endl
+
 const int INF = 1e9;
 
 int main(void){
