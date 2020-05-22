@@ -5,6 +5,7 @@ using ll = long long;
 
 //container util
 #define SORT(c) sort((c).begin(),(c).end())
+#define all(a) (a).begin(), (a).end()
 
 //repetition
 #define FOR(i,a,b) for(int i=(a);i<(b);++i)
